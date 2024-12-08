@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Milestone 01</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+
+    <div class="resume-container">
+    <header> <i> <b> Builde Your Resume For Growing Your Skills </b> </i></header>
+    <header><i> <b> Dynamic Resume & Editable & Share Your Resume </b> </i></header>
+    <br /><br />
+
+    <form id="resumeForm">
+
+
+    <fieldset>
+      <legend>Personal Information</legend>
+
+      <label for="Photo">Upload Photo</label>
+      <input type="file" id="Photo" name="Photo" required>
+      <br><br>
+
+      <label for="name">Name</label>
+      <input type="name" id="name" placeholder="Name" required >
+      <br /><br />
+      <label for="email">Email</label>
+      <input type="email" id="email" placeholder="Email Address" required>
+      <br /><br />
+      <label for="phone">Phone</label>
+      <input type="tel" id="phone" placeholder="Number" required >
+    </fieldset>
+
+    <br /><br />
+
+    <fieldset>
+      <legend>Education</legend>
+      <label for="Education">Education</label>
+      <textarea name="Education" id="education" rows="6" placeholder="what is your Education" required></textarea>
+    </fieldset>
+
+    <br /><br />
+
+    <fieldset>
+      <legend>Skills</legend>
+      <label for="skills">Skills</label>
+      <textarea
+        name="skills"
+        id="skills"
+        rows="5"
+        placeholder="Add Your Skills"
+        required
+      ></textarea>
+    </fieldset>
+    <br /><br />
+    <button type="submit">Submit</button>
+    <button type="reset">Reaset</button>
+    <!-- <button type="share">Share Link</button>
+    <button type="edit">Edit Resume</button>
+    <button type="pdf">Dawnload PDF</button> -->
+
+
+
+    </form>
+
+    </div>
+
+
+
+    <div id="resumePage" class="resume-page hidden">
+
+      <div id="resumeContent" class="resume-Content">
+         <img id="resume-Photo" class="resume-Photo" src="" alt="Photo">
+
+         <h1 id="resumeName"></h1>
+         <p id="resumeEmail"></p>
+         <p id="resumePhone"></p>
+
+         <h2>Education</h2>
+         <p id="Education"></p>
+
+         <h2>Skills</h2>
+         <p id="Skills"></p>
+            </div>
+         
+          <button id="submit">Submit</button>
+          <button id="reset" id="reset">Reset</button>
+          <button id="share">Share Link</button>
+          <button id="edit">Edit Resume</button>
+          <button id="PDF">Dawnload PDF</button>
+         
+
+
+      
+
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js"></script> 
+
+
+    <script src="script.js"></script>
+  </body>
+</html>
